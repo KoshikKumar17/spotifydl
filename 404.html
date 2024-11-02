@@ -1,0 +1,38 @@
+<!---- Start ---->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>404 - Error</title>
+</head>
+
+<body style="background:aquamarine;">
+    <font color="red" align="center">
+       <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <h1>Oops! 404 - Error or Page not found..🥺</h1>
+        <br/><br/><br/><br/>
+        <h2>Redirecting to <strong>Hompe Page</strong> in <span id="countdown"></span></h2>
+        <br/><br/><br/>
+        <h3><strong>© Koshik</strong></h3>
+    </font>
+<!----- Redirects to home after a delay ------>
+<script>
+let remainingSeconds = 5;
+const countDown = document.getElementById("countdown");
+if (countDown)
+    countDown.innerHTML = remainingSeconds;
+const intervalId = setInterval(() => {
+    remainingSeconds--;
+    if (remainingSeconds === 0) {
+// Redirecting to Home Page 🤦  🙂 //
+        window.location.href = "https://KoshikKumar17.github.io";
+        window.clearInterval(intervalId);
+    } else if (countDown) {
+        countDown.innerHTML = remainingSeconds;
+    }
+}, 1000);
+</script>
+</body>
+
+</html>
+<!--- Hehe 😁 --->
