@@ -1,0 +1,54 @@
+<!---- © Koshik Kumar --->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charSet="utf-8"/>
+<title>Spotify Downloader - Spotify to MP3 Converter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Spotify Downloader that let's you download songs, albums, and playlists from spotify in MP3">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+<link rel="canonical" href="https://KoshikKumar17.github.io/spotifydl">
+<script>
+	var media = 'spotify';
+	var music_site = 'open.spotify.com';
+</script>
+<style>
+	:root {
+	  --main-bt-color: white;	
+	  --main-bg1-color: black;
+	  --main-bg2-color: grey;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+<nav style="color:black;size:20px;"><a href="https://KoshikKumar17.github.io"><b>Koshik Kumar</b></a></nav>
+<div id="main">
+	<h2>Download and Convert Spotify Muisc to MP3</h2>
+	<div id="search-box">
+		<input id="search-input" type="text" name="url" placeholder="Paste song, album or playlist URL from Spotify">
+		<input id="search-submit" type="submit" value="Start" onclick="return get_mp3()"><div id="loader"></div>
+	</div>	
+	<div id="info"></div>
+</div>
+
+<footer class="copyright">
+	<div class="footer_link"></div>
+	<p>© 2024 | Koshik Kumar </p>
+<font style="font-size:9px;" color="white"><i><b>Last Modified: <span id="lastModified"></span> IST </b></i>
+</footer>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>	
+<script src="script.js"></script>
+  
+<script>
+// <!-- Last Modified object -->
+var text = document.lastModified;
+document.getElementById("lastModified").innerHTML = text;
+</script>
+  
+</body>
+</html>
